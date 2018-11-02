@@ -14,12 +14,10 @@ function init() {
     });
 
     document.querySelector("#btnBack").addEventListener("click", function () {
-//        pages[0].classList.add("active");
-//        pages[1].classList.remove("active");
-//
-//        removeData();
-        location.reload();
+        pages[0].classList.add("active");
+        pages[1].classList.remove("active");
 
+        removeData();
 
     });
 
@@ -36,9 +34,12 @@ function getData() {
     let numMax = document.querySelector("#max").value;
     let pages = document.querySelectorAll(".page");
 
-    if (numDigits > 6 || numDigits < 1 || numMax > 99 || numMax < 2) {
+    if (numDigits > 10 || numDigits < 1 || numMax > 99 || numMax < 2) {
         alert("INPUTS ARE OUT OF RANGE. Digits must be between 1 and 6 and range must be between 2 and 99")
-        location.reload();
+        pages[0].classList.add("active");
+        pages[1].classList.remove("active");
+        document.querySelector("#digits").value = document.querySelector("#digits").defaultValue;
+        document.querySelector("#max").value = document.querySelector("#max").defaultValue;
 
 
     } else {
@@ -86,10 +87,10 @@ function removeData() {
 
 
     let ul = document.querySelector(".num_list");
+    ul.innerHTML = "";
+    document.querySelector("#digits").value = document.querySelector("#digits").defaultValue;
+        document.querySelector("#max").value = document.querySelector("#max").defaultValue;
 
-    while (ul.hasChildNodes()) {
-        ul.removeChild(ul.firstChild);
-    }
 
 
 }

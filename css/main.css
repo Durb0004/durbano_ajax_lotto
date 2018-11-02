@@ -7,7 +7,6 @@
         width: 100%;
         margin: auto;
         text-align: center;
-        padding: 40% 0px;
     }
     h1{
         font-size: 2rem;
@@ -22,21 +21,22 @@
 
     .active {
         display: block;
-        width:
     }
 
     ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         list-style-type: none;
         padding: 0;
     }
 
     li {
-        font-size: 3rem;
-        border: 4px blue double;
+        margin: 20px;
+        font-size: 2rem;
+        border: 8px blue double;
         margin: 4px;
         width: 30%;
-        margin: auto;
-        margin-top: 5px;
 
     }
     button{
@@ -72,17 +72,20 @@
     }
 
     ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         list-style-type: none;
         padding: 0;
     }
 
     li {
-        font-size: 4rem;
-        border: 6px blue double;
+        margin: 20px;
+        font-size: 3rem;
+        border: 8px blue double;
         margin: 4px;
         width: 30%;
-        margin: auto;
-        margin-top: 5px;
+
     }
     button{
         padding: 20px;
@@ -118,17 +121,19 @@
     }
 
     ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         list-style-type: none;
         padding: 0;
     }
 
     li {
+        margin: 20px;
         font-size: 4rem;
         border: 8px blue double;
         margin: 4px;
         width: 30%;
-        margin: auto;
-        margin-top: 5px;
 
     }
     button{
