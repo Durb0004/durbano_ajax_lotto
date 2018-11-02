@@ -35,7 +35,7 @@ function getData() {
     let pages = document.querySelectorAll(".page");
 
     if (numDigits > 10 || numDigits < 1 || numMax > 99 || numMax < 2) {
-        alert("INPUTS ARE OUT OF RANGE. Digits must be between 1 and 6 and range must be between 2 and 99")
+        alert("INPUTS ARE OUT OF RANGE. Digits must be between 1 and 10 and range must be between 2 and 99")
         pages[0].classList.add("active");
         pages[1].classList.remove("active");
         document.querySelector("#digits").value = document.querySelector("#digits").defaultValue;
