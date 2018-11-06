@@ -1,5 +1,5 @@
-/*MEDIA QUERIES*/
-@media (max-width: 599px) {
+
+
 
 
     #home,
@@ -44,8 +44,8 @@
         font-size: 1rem
     }
 
-}
 
+/*MEDIA QUERIES*/
 @media (min-width: 600px) and (max-width:999px) {
 
     #home,
